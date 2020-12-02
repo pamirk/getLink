@@ -1,8 +1,8 @@
-import {vlink} from "./cranjob";
 
 const express = require('express');
 const fetch = require('node-fetch');
 const cheerio = require('cheerio');
+let vlink = require('cranjob');
 
 app = express();
 // Schedule tasks to be run on the server.
