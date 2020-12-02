@@ -1,4 +1,7 @@
-export let vlink = null
+const fetch = require('node-fetch');
+const cheerio = require('cheerio');
+
+let vlink = null;
 
 function sayHello() {
     fetch("https://coursehunter.net/course/next-js",)
@@ -10,3 +13,4 @@ function sayHello() {
         })
 }
 sayHello();
+module.exports = vlink;
