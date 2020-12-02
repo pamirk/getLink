@@ -20,4 +20,5 @@ cron.schedule('0 0 */3 * * *', function () {
             vlink = data['@graph'][0].contentUrl.split('/')[4]
         })
 });
-app.listen(3000);
+const port = process.env.PORT || 3333;
+app.listen(port, () => console.log(`API available on ${port}`));
