@@ -10,6 +10,7 @@ function sayHello() {
             const parsedHTML = cheerio.load(html);
             const data = JSON.parse(parsedHTML('script').get()[0].children[0].data);
             vlink = data['@graph'][0].contentUrl.split('/')[4]
+            console.log("vlink:     ", vlink)
         })
 }
 sayHello();
